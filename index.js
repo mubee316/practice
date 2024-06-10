@@ -349,17 +349,24 @@ console.log (isValidEmail("mubarak316@.com"));
 
 //or this shorter form 
 
-function isValidEmail(email){
-    return email.includes("@") ? true : false
-}
-console.log (isValidEmail("mubrak316@.com"))
+// function isValidEmail(email){
+//     return email.includes("@") ? true : false
+// }
+// console.log (isValidEmail("mubrak316@.com"))
 
-function isEven(Number){
-if (Number % 2 === 0){
-    return true;
+// function isEven(Number){
+// if (Number % 2 === 0){
+//     return true;
 
-}else{
-    return false;
+// }else{
+//     return false;
+// }
+// }
+// console.log(isEven(21))
+
+// shorter version
+
+function isEven(number){
+ return(number % 2 === 0) ? true : false
 }
-}
-console.log(isEven(21))
+console.log(isEven(4))
