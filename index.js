@@ -310,19 +310,46 @@
 // }else {
 //     console.log(`welcome ${username}`)
 // }
-let loggedIn  = true;
-let username;
-let password;
+// let loggedIn  = true;
+// let username;
+// let password;
 
 
-while(!loggedIn){
-    username = window.prompt(`enter your username`);
-    password = window.prompt(`enter your password`);
+// while(!loggedIn){
+//     username = window.prompt(`enter your username`);
+//     password = window.prompt(`enter your password`);
 
-    if(username === "myuser" && password === "mypass"){
-        loggedIn = true;
-        console.log("you are logged in");
+//     if(username === "myuser" && password === "mypass"){
+//         loggedIn = true;
+//         console.log("you are logged in");
+//     }else{
+//         console.log("invalid credentials try again");
+//     }
+// }
+
+// function add(x,y){
+//     return x+y;
+// }
+// console.log (add(10,3))
+
+
+// function subtract(t,u){
+//     return t-u;
+// }
+// console.log(subtract(10,7))
+
+function isValidEmail(email){
+    if (email.includes("@")){
+     return true;
     }else{
-        console.log("invalid credentials try again");
+        return false;
     }
 }
+console.log (isValidEmail("mubarak316@.com"));
+
+//or this shorter form 
+
+function isValidEmail(email){
+    return email.includes("@") ? true : false
+}
+console.log (isValidEmail("mubrak316@.com"))
