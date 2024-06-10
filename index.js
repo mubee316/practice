@@ -353,3 +353,13 @@ function isValidEmail(email){
     return email.includes("@") ? true : false
 }
 console.log (isValidEmail("mubrak316@.com"))
+
+function isEven(Number){
+if (Number % 2 === 0){
+    return true;
+
+}else{
+    return false;
+}
+}
+console.log(isEven(21))
