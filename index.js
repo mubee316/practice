@@ -481,3 +481,16 @@ function sum(Accumulator , element){
     return Accumulator + element
 
 }
+
+const maximum = [20,50,100,25,150]
+maximum.forEach(display)
+const max = maximum.reduce(getMax)
+console.log(`the maximum value is :${max}`)
+
+function display(element){
+    console.log(element)
+}
+
+function getMax(Accumulator, element){
+    return Math.max(Accumulator, element)
+}
