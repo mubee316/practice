@@ -451,9 +451,24 @@
 // }
 
 
-let number = [1,2,3,4,5,6,7,8,9,10];
-let evenNUm = number.filter(isEven)
-console.log(evenNUm)
-function isEven(element){
-    return element % 2 === 0
+// let number = [1,2,3,4,5,6,7,8,9,10];
+// let evenNUm = number.filter(isEven)
+// let oddNum  = number.filter(isOdd)
+// console.log(oddNum)
+// function isEven(element){
+//     return element % 2 === 0
+// }
+// function isOdd(element){
+//     return element % 2 !== 0
+// }
+
+const word = ["mubarak", "purple", "miles","development","ink"];
+const words = word.filter(longWord);
+console.log(words)
+
+function shortWord(element){
+    return element.length <= 5
+}
+function longWord(element){
+    return element.length > 5
 }
