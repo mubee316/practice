@@ -439,13 +439,21 @@
 //     console.log(element)
 // }
 
-const dates = ["2024-1-10" ,"2025-2-20" , "2026-3-30"];
-const formatted = dates.map(formatDate)
+// const dates = ["2024-1-10" ,"2025-2-20" , "2026-3-30"];
+// const formatted = dates.map(formatDate)
 
-console.log( typeof formatted)
-console.log(formatted)
+// console.log( typeof formatted)
+// console.log(formatted)
 
-function formatDate(element){
-    const parts = element.split("-")
-    return `${parts[1]}/${parts[2]}/${parts[0]}`
+// function formatDate(element){
+//     const parts = element.split("-")
+//     return `${parts[1]}/${parts[2]}/${parts[0]}`
+// }
+
+
+let number = [1,2,3,4,5,6,7,8,9,10];
+let evenNUm = number.filter(isEven)
+console.log(evenNUm)
+function isEven(element){
+    return element % 2 === 0
 }
