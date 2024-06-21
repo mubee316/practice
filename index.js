@@ -387,44 +387,65 @@
 
 // function hello(callback){
 //     console.log("hello")
-//     callback(  )
-// }
+// //     callback(  )
+// // }
 
-// function japa (){
-//     console.log("japa")
-// }
-
-
-
-// let number = [1,2,3,4,5];
-// number.forEach(square)
-// number.forEach(display);
+// // function japa (){
+// //     console.log("japa")
+// // }
 
 
-// function double(element, index , array){
-//     array[index] = element*2
+
+// // let number = [1,2,3,4,5];
+// // number.forEach(square)
+// // number.forEach(display);
+
+
+// // function double(element, index , array){
+// //     array[index] = element*2
     
-// }
-// function tripple(element, index , array){
-//     array[index] = element*3
+// // }
+// // function tripple(element, index , array){
+// //     array[index] = element*3
     
-// }
-// function square(element, index , array){
-//     array[index] = Math.pow(element , 2)
+// // }
+// // function square(element, index , array){
+// //     array[index] = Math.pow(element , 2)
     
+// // }
+// // function display(element){
+// //     console.log(element)
+// // }
+
+// let fruit = ["banana", "apple" , "coconut", "mango","grape"];
+
+// fruit.forEach(capitalize);
+// fruit.forEach(display);
+
+// // function upperCase(element, index , array){
+// //     array[index] = element.toUpperCase();
+// // }
+
+// // function lowerCase(element, index , array){
+// //     array[index] = element.toLowerCase
+
+// // }
+
+
+// function capitalize(element, index , array){
+//     array[index] = element.charAt(0).toUpperCase() +element.slice(1)
 // }
 // function display(element){
 //     console.log(element)
 // }
 
-let fruit = ["banana", "apple" , "cococnut", "mango","grape"];
+const dates = ["2024-1-10" ,"2025-2-20" , "2026-3-30"];
+const formatted = dates.map(formatDate)
 
-fruit.forEach(upperCase);
-fruit.forEach(display);
+console.log( typeof formatted)
+console.log(formatted)
 
-function upperCase(element, index , array){
-    array[index] = element.toUppercase();
-}
-function display(element){
-    console.log(element)
+function formatDate(element){
+    const parts = element.split("-")
+    return `${parts[1]}/${parts[2]}/${parts[0]}`
 }
