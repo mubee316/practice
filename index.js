@@ -462,13 +462,22 @@
 //     return element % 2 !== 0
 // }
 
-const word = ["mubarak", "purple", "miles","development","ink"];
-const words = word.filter(longWord);
-console.log(words)
+// const word = ["mubarak", "purple", "miles","development","ink"];
+// const words = word.filter(longWord);
+// console.log(words)
 
-function shortWord(element){
-    return element.length <= 5
-}
-function longWord(element){
-    return element.length > 5
+// function shortWord(element){
+//     return element.length <= 5
+// }
+// function longWord(element){
+//     return element.length > 5
+// }
+
+const price = [20,50,100,25]
+const total = price.reduce(sum)
+console.log(`$${total.toFixed(5)}`)
+
+function sum(Accumulator , element){
+    return Accumulator + element
+
 }
